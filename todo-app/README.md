@@ -1,8 +1,8 @@
-# React + Vite
+# To Do List Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Global State Management**
+The application utilizes React Context API to manage global state. The `SettingsContext` provides default settings such as the number of items per page, hiding completed items, and the default sort word. These settings are made available to all components through the `SettingsProvider`.
 
-Currently, two official plugins are available:
+**useForm Hook**
+The `useForm` hook manages form state and handles form submissions. It initializes form values, updates them on input change, and triggers a callback function upon form submission. This hook simplifies form management and ensures consistent state handling across the application.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
