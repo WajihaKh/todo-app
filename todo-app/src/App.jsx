@@ -1,10 +1,13 @@
-import React from 'react';
-import Todo from './Components/Todo'
+import Todo from './Components/Todo';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import './App.scss'; 
+const App = () => (
+  <>
+    <Header />
+    <Todo />
+    <Footer />
+  </>
+);
 
-export default class App extends React.Component {
-    render() {
-        return (
-            <Todo />
-        );
-    }
-}
+export default App;
