@@ -12,4 +12,4 @@ The application utilizes React Context API to manage global state. The `Settings
 **useForm Hook**
 The `useForm` hook manages form state and handles form submissions. It initializes form values, updates them on input change, and triggers a callback function upon form submission. This hook simplifies form management and ensures consistent state handling across the application.
 
-![Day-1](./UML-day1.png)
+![Day-1](./assets/UML-day1.png)

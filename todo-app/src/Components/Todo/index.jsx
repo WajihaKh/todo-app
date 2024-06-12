@@ -3,17 +3,15 @@ import { Pagination } from '@mantine/core';
 import useForm from "../Hook/form";
 import { v4 as uuid } from "uuid";
 import { useSettings } from "../Context-Settings"
-import './styles.scss'; // Import the styles
+import './styles.scss';
 
 const Todo = () => {
   const { itemsPerPage, hideCompleted } = useSettings();
-  const [defaultValues] = useState({
-    difficulty: 4,
-  });
+  const [defaultValues] = useState({ difficulty: 4 });
   const [list, setList] = useState([]);
   const [incomplete, setIncomplete] = useState(0);
   const [activePage, setActivePage] = useState(1);
-  const { handleChange, handleSubmit, values } = useForm(addItem, defaultValues);
+  const { handleChange, handleSubmit } = useForm(addItem, defaultValues);
 
   function addItem(item) {
     item.id = uuid();
